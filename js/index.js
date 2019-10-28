@@ -53,7 +53,25 @@ links[0].textContent = siteContent.nav['nav-item-1'];
 links[1].textContent = siteContent.nav['nav-item-2'];
 links[2].textContent = siteContent.nav['nav-item-3'];
 links[3].textContent = siteContent.nav['nav-item-4'];
+links[4].textContent = siteContent.nav['nav-item-5'];
+links[5].textContent = siteContent.nav['nav-item-6'];
 
+const newLink1 = document.createElement('a');
+const newLink2 = document.createElement('a');
+
+newLink1.textContent = 'Link One'
+newLink2.textContent = 'Link Two'
+
+const parentElement = document.querySelector('nav')
+
+parentElement.append(newLink1);
+parentElement.prepend(newLink2);
+//nav color green
+
+const linkColor = document.querySelectorAll('a');
+linkColor.forEach(element => {
+  element.style.color = 'green'
+});
 
 const ctaText = document.querySelector('h1');
 ctaText.textContent = siteContent['cta']['h1'];
@@ -105,4 +123,4 @@ const contactpara3 = document.querySelector('.contact p:nth-of-type(3)');
 contactpara3.textContent = siteContent['contact']['email'];
 
 const footer = document.querySelector('footer');
-footer.textContent = siteContent['footer']['copyright']
+footer.textContent = siteContent['footer']['copyright'];
