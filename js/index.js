@@ -48,7 +48,7 @@ cta.src = siteContent['cta']['img-src'];
 const middle = document.getElementById('middle-img');
 middle.src = siteContent['main-content']['middle-img-src'];
 
-const links = document.getElementsByTagName('a');
+const links = document.querySelectorAll('a');
 links[0].textContent = siteContent.nav['nav-item-1'];
 links[1].textContent = siteContent.nav['nav-item-2'];
 links[2].textContent = siteContent.nav['nav-item-3'];
@@ -56,6 +56,7 @@ links[3].textContent = siteContent.nav['nav-item-4'];
 links[4].textContent = siteContent.nav['nav-item-5'];
 links[5].textContent = siteContent.nav['nav-item-6'];
 
+//newLinks
 const newLink1 = document.createElement('a');
 const newLink2 = document.createElement('a');
 
@@ -66,6 +67,7 @@ const parentElement = document.querySelector('nav')
 
 parentElement.append(newLink1);
 parentElement.prepend(newLink2);
+
 //nav color green
 
 const linkColor = document.querySelectorAll('a');
@@ -79,6 +81,8 @@ ctaText.textContent = siteContent['cta']['h1'];
 const btn = document.querySelector('button')
 btn.textContent = siteContent['cta']['button'];
 
+// top content
+
 const topCon = document.querySelector('.top-content div:nth-of-type(1) h4');
 topCon.textContent = siteContent['main-content']['features-h4'];
 
@@ -90,6 +94,8 @@ topCon2.textContent = siteContent['main-content']['about-h4'];
 
 const para2 = document.querySelector('.top-content div:nth-of-type(2) p');
 para2.textContent = siteContent['main-content']['about-content'];
+
+// bottom content
 
 const bottomCon1 = document.querySelector('.bottom-content div:nth-of-type(1) h4');
 bottomCon1.textContent = siteContent['main-content']['services-h4'];
