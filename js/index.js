@@ -55,4 +55,54 @@ links[2].textContent = siteContent.nav['nav-item-3'];
 links[3].textContent = siteContent.nav['nav-item-4'];
 
 
+const ctaText = document.querySelector('h1');
+ctaText.textContent = siteContent['cta']['h1'];
 
+const btn = document.querySelector('button')
+btn.textContent = siteContent['cta']['button'];
+
+const topCon = document.querySelector('.top-content div:nth-of-type(1) h4');
+topCon.textContent = siteContent['main-content']['features-h4'];
+
+const para1 = document.querySelector('.top-content div:nth-of-type(1) p');
+para1.textContent = siteContent['main-content']['features-content'];
+
+const topCon2 = document.querySelector('.top-content div:nth-of-type(2) h4');
+topCon2.textContent = siteContent['main-content']['about-h4'];
+
+const para2 = document.querySelector('.top-content div:nth-of-type(2) p');
+para2.textContent = siteContent['main-content']['about-content'];
+
+const bottomCon1 = document.querySelector('.bottom-content div:nth-of-type(1) h4');
+bottomCon1.textContent = siteContent['main-content']['services-h4'];
+
+const para3 = document.querySelector('.bottom-content div:nth-of-type(1) p');
+para3.textContent = siteContent['main-content']['services-content'];
+
+const bottomCon2 = document.querySelector('.bottom-content div:nth-of-type(2) h4');
+bottomCon2.textContent = siteContent['main-content']['product-h4'];
+
+const para4 = document.querySelector('.bottom-content div:nth-of-type(2) p');
+para4.textContent = siteContent['main-content']['product-content'];
+
+const bottomCon3 = document.querySelector('.bottom-content div:nth-of-type(3) h4');
+bottomCon3.textContent = siteContent['main-content']['vision-h4'];
+
+const para5 = document.querySelector('.bottom-content div:nth-of-type(3) p');
+para5.textContent = siteContent['main-content']['vision-content'];
+
+//contact info
+const contact1 = document.querySelector('.contact h4');
+contact1.textContent = siteContent['contact']['contact-h4'];
+
+const contactpara = document.querySelector('.contact p:nth-of-type(1)');
+contactpara.textContent = siteContent['contact']['address'];
+
+const contactpara2 = document.querySelector('.contact p:nth-of-type(2)');
+contactpara2.textContent = siteContent['contact']['phone'];
+
+const contactpara3 = document.querySelector('.contact p:nth-of-type(3)');
+contactpara3.textContent = siteContent['contact']['email'];
+
+const footer = document.querySelector('footer');
+footer.textContent = siteContent['footer']['copyright']
